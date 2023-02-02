@@ -32,12 +32,9 @@ searchInput.addEventListener("click", () => {
                 }
             })
             .catch((error) => {
-                console.log(error);
-                // bad request, display to user with error code and ask to try again
+                alert("There was an error processing your request: " + error);
         });
         
-    } else {
-        // invalid input. stay on page and give error message
     }
 })
 
